@@ -4,8 +4,8 @@ SoftwareSerial BTSerial(17, 16); // RX | TX
 
 void setup()
 {
- // pinMode(15, OUTPUT);  // this pin will pull the HC-05 pin 34 (key pin) HIGH to switch module to AT mode
- // digitalWrite(15, HIGH); //some modules require these lines to be commented out
+  pinMode(15, OUTPUT);  // this pin will pull the HC-05 pin 34 (key pin) HIGH to switch module to AT mode
+  digitalWrite(15, HIGH); //some modules require these lines to be commented out
   Serial.begin(9600);
   Serial.println("Commands for HC-05");
   Serial.println(" ");
